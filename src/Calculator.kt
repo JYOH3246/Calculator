@@ -11,48 +11,48 @@ fun main() {
         val selectCalc :Int = readLine()!!.toInt()
         when (selectCalc) {
             1 -> {
-                println("첫번째 숫자를 입력해주세요.")
-                var num1 :Int = readLine()!!.toInt()
-                println("두번째 숫자를 입력해주세요.")
-                var num2 :Int = readLine()!!.toInt()
-                var resultPlus :Int = num1 + num2
-                println("${num1}+${num2} 는 ${resultPlus}입니다.")
+                println("첫번째 숫자를 입력해 주세요.")
+                val num1 :Int = readLine()!!.toInt()
+                println("두번째 숫자를 입력해 주세요.")
+                val num2 :Int = readLine()!!.toInt()
+                val resultAdd :Int = num1 + num2
+                println("${num1}+${num2} 는 ${resultAdd}입니다.")
             }
 
             2 -> {
-                println("첫번째 숫자를 입력해주세요.")
-                var num1 :Int = readLine()!!.toInt()
-                println("두번째 숫자를 입력해주세요.")
-                var num2 :Int = readLine()!!.toInt()
-                var resultMinus :Int = num1 - num2
-                println("${num1}-${num2} 는 ${resultMinus}입니다.")
+                println("첫번째 숫자를 입력해 주세요.")
+                val num1 :Int = readLine()!!.toInt()
+                println("두번째 숫자를 입력해 주세요.")
+                val num2 :Int = readLine()!!.toInt()
+                val resultSub :Int = num1 - num2
+                println("${num1}-${num2} 는 ${resultSub}입니다.")
 
             }
 
             3 -> {
-                println("첫번째 숫자를 입력해주세요.")
-                var num1 :Int = readLine()!!.toInt()
-                println("두번째 숫자를 입력해주세요.")
-                var num2 :Int = readLine()!!.toInt()
-                var resulMulti :Int = num1 * num2
+                println("첫번째 숫자를 입력해 주세요.")
+                val num1 :Int = readLine()!!.toInt()
+                println("두번째 숫자를 입력해 주세요.")
+                val num2 :Int = readLine()!!.toInt()
+                val resulMulti :Int = num1 * num2
                 println("${num1}*${num2} 는 ${resulMulti}입니다.")
             }
 
             4 -> {
-                println("첫번째 숫자를 입력해주세요.")
-                var num1 :Int = readLine()!!.toInt()
-                println("두번째 숫자를 입력해주세요.")
-                var num2 :Int = readLine()!!.toInt()
-                var resultDiv :Int = num1 / num2
+                println("첫번째 숫자를 입력해 주세요.")
+                val num1 :Int = readLine()!!.toInt()
+                println("두번째 숫자를 입력해 주세요.")
+                val num2 :Int = readLine()!!.toInt()
+                val resultDiv :Int = num1 / num2
                 println("${num1}/${num2} 는 ${resultDiv}입니다.")
             }
 
             5 -> {
-                println("첫번째 숫자를 입력해주세요.")
-                var num1 :Int = readLine()!!.toInt()
-                println("두번째 숫자를 입력해주세요.")
-                var num2 :Int = readLine()!!.toInt()
-                var resultRemain :Int = num1 % num2
+                println("첫번째 숫자를 입력해 주세요.")
+                val num1 :Int = readLine()!!.toInt()
+                println("두번째 숫자를 입력해 주세요.")
+                val num2 :Int = readLine()!!.toInt()
+                val resultRemain :Int = num1 % num2
                 println("${num1}/${num2}의 나머지는 ${resultRemain}입니다.")
             }
 
