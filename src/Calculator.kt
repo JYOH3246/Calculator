@@ -4,7 +4,7 @@ fun main() {
         println("[1] 더하기")
         println("[2] 빼기")
         println("[3] 곱하기")
-        println("[4] 나누기")
+        println("[4] 몫 구하기")
         println("[5] 나머지")
         println("[6] 종료")
 
@@ -44,7 +44,7 @@ fun main() {
                 println("두번째 숫자를 입력해 주세요.")
                 val num2 :Int = readLine()!!.toInt()
                 val resultDiv :Int = num1 / num2
-                println("${num1}/${num2} 는 ${resultDiv}입니다.")
+                println("${num1}/${num2} 의 몫은 ${resultDiv}입니다.")
             }
 
             5 -> {
