@@ -1,6 +1,6 @@
-open class Calculator(_num1:Float, _num2:Float) {
-    var num1 :Float
-    var num2 :Float
+open class Calculator(_num1:Double, _num2:Double) {
+    var num1 :Double
+    var num2 :Double
 
 
     init {

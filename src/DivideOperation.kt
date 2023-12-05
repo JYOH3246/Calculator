@@ -1,5 +1,5 @@
-class DivideOperation (num1:Float,num2:Float) : Calculator(num1,num2) {
-    var resultDiv : Float = num1/num2
+class DivideOperation (num1:Double,num2:Double) : Calculator(num1,num2) {
+    var resultDiv : Double = num1/num2
     init {
         this.resultDiv = resultDiv
     }

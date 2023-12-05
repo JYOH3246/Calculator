@@ -1,5 +1,5 @@
-class SubstractOperation(num1:Float,num2:Float) : Calculator(num1,num2) {
-    var resultSub : Float = num1-num2
+class SubstractOperation(num1:Double,num2:Double) : Calculator(num1,num2) {
+    var resultSub : Double = num1-num2
     init {
         this.resultSub = resultSub
     }

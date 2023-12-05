@@ -1,5 +1,5 @@
-class MultiplyOperation (num1:Float,num2:Float) : Calculator(num1,num2) {
-    var resultMulti : Float = num1*num2
+class MultiplyOperation (num1:Double,num2:Double) : Calculator(num1,num2) {
+    var resultMulti : Double = num1*num2
     init {
         this.resultMulti = resultMulti
     }
