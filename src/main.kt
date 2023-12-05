@@ -4,55 +4,50 @@ fun main() {
         println("[1] 더하기")
         println("[2] 빼기")
         println("[3] 곱하기")
-        println("[4] 몫 구하기")
-        println("[5] 나머지")
-        println("[6] 종료")
+        println("[4] 나누기")
+        println("[5] 종료")
 
         val selectCalc :Int = readLine()!!.toInt()
         when (selectCalc) {
             1 -> {
-                var selectAdd = AddOperation (2,3,5)
+                println("첫번째 숫자를 입력해 주세요.")
+                var num1 :Float = readLine()!!.toFloat()
+                println("두번째 숫자를 입력해 주세요.")
+                var num2 :Float = readLine()!!.toFloat()
+                var selectAdd = AddOperation(num1,num2)
+                selectAdd.operatingCalc()
 
             }
 
             2 -> {
                 println("첫번째 숫자를 입력해 주세요.")
-                val num1 :Int = readLine()!!.toInt()
+                val num1 :Float = readLine()!!.toFloat()
                 println("두번째 숫자를 입력해 주세요.")
-                val num2 :Int = readLine()!!.toInt()
-                val resultSub :Int = num1 - num2
-                println("${num1}-${num2} 는 ${resultSub}입니다.")
+                val num2 :Float = readLine()!!.toFloat()
+                var selectSub = SubstractOperation(num1,num2)
+                selectSub.operatingCalc()
 
             }
 
             3 -> {
                 println("첫번째 숫자를 입력해 주세요.")
-                val num1 :Int = readLine()!!.toInt()
+                var num1 :Float = readLine()!!.toFloat()
                 println("두번째 숫자를 입력해 주세요.")
-                val num2 :Int = readLine()!!.toInt()
-                val resulMulti :Int = num1 * num2
-                println("${num1}*${num2} 는 ${resulMulti}입니다.")
+                var num2 :Float = readLine()!!.toFloat()
+                var selectMulti = MultiplyOperation(num1,num2)
+                selectMulti.operatingCalc()
             }
 
             4 -> {
                 println("첫번째 숫자를 입력해 주세요.")
-                val num1 :Int = readLine()!!.toInt()
+                var num1 :Float = readLine()!!.toFloat()
                 println("두번째 숫자를 입력해 주세요.")
-                val num2 :Int = readLine()!!.toInt()
-                val resultDiv :Int = num1 / num2
-                println("${num1}/${num2} 의 몫은 ${resultDiv}입니다.")
+                var num2 :Float = readLine()!!.toFloat()
+                var selectDiv  = DivideOperation(num1, num2)
+                selectDiv.operatingCalc()
             }
 
             5 -> {
-                println("첫번째 숫자를 입력해 주세요.")
-                val num1 :Int = readLine()!!.toInt()
-                println("두번째 숫자를 입력해 주세요.")
-                val num2 :Int = readLine()!!.toInt()
-                val resultRemain :Int = num1 % num2
-                println("${num1}/${num2}의 나머지는 ${resultRemain}입니다.")
-            }
-
-            6 -> {
                 println("계산기를 종료합니다.")
                 break
             }
@@ -61,6 +56,7 @@ fun main() {
                 println("항목을 다시 선택해 주시기 바랍니다.")
                 continue
             }
+
         }
     }
 }

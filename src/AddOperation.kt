@@ -1,10 +1,11 @@
-class AddOperation {
-    val num1 :Int = readLine()!!.toInt()
-    val num2 :Int = readLine()!!.toInt()
-    val resultAdd :Int = num1 + num2
+class AddOperation(num1:Float,num2:Float) : Calculator(num1,num2) {
+    var resultAdd : Float = num1+num2
 
-    constructor(_num1 :Int,_num2 :Int,_resultAdd :Int) {
-        println("${num1}+${num2} 는 ${resultAdd}입니다.")
+    init {
+        this.resultAdd = resultAdd
+    }
+    override fun operatingCalc () {
+        println("${num1} - ${num2} = ${resultAdd}")
     }
 
 }
