@@ -5,13 +5,17 @@ fun main() {
         println("[2] 빼기")
         println("[3] 곱하기")
         println("[4] 몫 구하기")
-        println("[5] 나머지")
-        println("[6] 종료")
+        println("[5] 종료")
 
         val selectCalc :Int = readLine()!!.toInt()
         when (selectCalc) {
             1 -> {
-                var selectAdd = AddOperation (2,3,5)
+                println("첫번째 숫자를 입력해 주세요.")
+                val num1 :Int = readLine()!!.toInt()
+                println("두번째 숫자를 입력해 주세요.")
+                val num2 :Int = readLine()!!.toInt()
+                val resultAdd :Int = num1 + num2
+                println("${num1}+${num2} 는 ${resultAdd}입니다.")
 
             }
 
@@ -44,15 +48,6 @@ fun main() {
             }
 
             5 -> {
-                println("첫번째 숫자를 입력해 주세요.")
-                val num1 :Int = readLine()!!.toInt()
-                println("두번째 숫자를 입력해 주세요.")
-                val num2 :Int = readLine()!!.toInt()
-                val resultRemain :Int = num1 % num2
-                println("${num1}/${num2}의 나머지는 ${resultRemain}입니다.")
-            }
-
-            6 -> {
                 println("계산기를 종료합니다.")
                 break
             }
