@@ -11,12 +11,8 @@ fun main() {
         val selectCalc :Int = readLine()!!.toInt()
         when (selectCalc) {
             1 -> {
-                println("첫번째 숫자를 입력해 주세요.")
-                val num1 :Int = readLine()!!.toInt()
-                println("두번째 숫자를 입력해 주세요.")
-                val num2 :Int = readLine()!!.toInt()
-                val resultAdd :Int = num1 + num2
-                println("${num1}+${num2} 는 ${resultAdd}입니다.")
+                var selectAdd = AddOperation (2,3,5)
+
             }
 
             2 -> {
