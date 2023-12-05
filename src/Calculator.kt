@@ -1,2 +1,70 @@
-class Calculator {
+fun main() {
+    while (true) {
+        println("원하는 항목을 선택해 주세요")
+        println("[1] 더하기")
+        println("[2] 빼기")
+        println("[3] 곱하기")
+        println("[4] 나누기")
+        println("[5] 나머지")
+        println("[6] 종료")
+
+        val selectCalc :Int = readLine()!!.toInt()
+        when (selectCalc) {
+            1 -> {
+                println("첫번째 숫자를 입력해주세요.")
+                var num1 :Int = readLine()!!.toInt()
+                println("두번째 숫자를 입력해주세요.")
+                var num2 :Int = readLine()!!.toInt()
+                var resultPlus :Int = num1 + num2
+                println("${num1}+${num2} 는 ${resultPlus}입니다.")
+            }
+
+            2 -> {
+                println("첫번째 숫자를 입력해주세요.")
+                var num1 :Int = readLine()!!.toInt()
+                println("두번째 숫자를 입력해주세요.")
+                var num2 :Int = readLine()!!.toInt()
+                var resultMinus :Int = num1 - num2
+                println("${num1}-${num2} 는 ${resultMinus}입니다.")
+
+            }
+
+            3 -> {
+                println("첫번째 숫자를 입력해주세요.")
+                var num1 :Int = readLine()!!.toInt()
+                println("두번째 숫자를 입력해주세요.")
+                var num2 :Int = readLine()!!.toInt()
+                var resulMulti :Int = num1 * num2
+                println("${num1}*${num2} 는 ${resulMulti}입니다.")
+            }
+
+            4 -> {
+                println("첫번째 숫자를 입력해주세요.")
+                var num1 :Int = readLine()!!.toInt()
+                println("두번째 숫자를 입력해주세요.")
+                var num2 :Int = readLine()!!.toInt()
+                var resultDiv :Int = num1 / num2
+                println("${num1}/${num2} 는 ${resultDiv}입니다.")
+            }
+
+            5 -> {
+                println("첫번째 숫자를 입력해주세요.")
+                var num1 :Int = readLine()!!.toInt()
+                println("두번째 숫자를 입력해주세요.")
+                var num2 :Int = readLine()!!.toInt()
+                var resultRemain :Int = num1 % num2
+                println("${num1}/${num2}의 나머지는 ${resultRemain}입니다.")
+            }
+
+            6 -> {
+                println("계산기를 종료합니다.")
+                break
+            }
+
+            else -> {
+                println("항목을 다시 선택해 주시기 바랍니다.")
+                continue
+            }
+        }
+    }
 }
