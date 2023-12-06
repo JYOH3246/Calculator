@@ -9,8 +9,8 @@ class DivideOperation(override var num1: Double, override var num2: Double) : Ab
         this.resultDiv = resultDiv
     }
 
-    // AbstractOperation 내 operatingCalc() 메소드 오버라이딩
-    override fun operatingCalc(num1: Double, num2: Double) {
+    // AbstractOperation 내 operatingCalculation() 메소드 오버라이딩
+    override fun operatingCalculation(num1: Double, num2: Double) {
         //조건1 : num1과 num2의 input값이 예를 들면 3.0 , 4.0인 경우(num1과 num2가 정수인 경우)
         if (num1 * 10 % 10 == 0.toDouble() && num2 * 10 % 10 == 0.toDouble()) {
             // 내부조건1 : 나눗셈의 결과가 정수인 경우

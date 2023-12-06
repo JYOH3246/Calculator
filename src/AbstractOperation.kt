@@ -4,5 +4,5 @@ abstract class AbstractOperation {
     abstract val num2: Double
 
     // 추상화할 함수
-    abstract fun operatingCalc(num1: Double, num2: Double)
+    abstract fun operatingCalculation(num1: Double, num2: Double)
 }
