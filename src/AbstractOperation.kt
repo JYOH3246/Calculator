@@ -1,7 +1,7 @@
 abstract class AbstractOperation {
-    abstract val x: Double
-    abstract val y: Double
+    abstract val num1: Double
+    abstract val num2: Double
 
 
-    abstract fun operatingCalc(x:Double,y:Double);
+    abstract fun operatingCalc(num1:Double,num2:Double)
 }

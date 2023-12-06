@@ -15,7 +15,7 @@ fun main() {
                 println("두번째 숫자를 입력해 주세요.")
                 var num2 :Double = readLine()!!.toDouble()
                 var selectAdd = AddOperation(num1,num2)
-                selectAdd.operatingCalc()
+                selectAdd.operatingCalc(num1,num2)
 
             }
 
@@ -25,7 +25,7 @@ fun main() {
                 println("두번째 숫자를 입력해 주세요.")
                 val num2 :Double = readLine()!!.toDouble()
                 var selectSub = SubstractOperation(num1,num2)
-                selectSub.operatingCalc()
+                selectSub.operatingCalc(num1,num2)
 
             }
 
@@ -35,7 +35,7 @@ fun main() {
                 println("두번째 숫자를 입력해 주세요.")
                 var num2 :Double = readLine()!!.toDouble()
                 var selectMulti = MultiplyOperation(num1,num2)
-                selectMulti.operatingCalc()
+                selectMulti.operatingCalc(num1,num2)
             }
 
             4 -> {
@@ -44,7 +44,7 @@ fun main() {
                 println("두번째 숫자를 입력해 주세요.")
                 var num2 :Double = readLine()!!.toDouble()
                 var selectDiv  = DivideOperation(num1, num2)
-                selectDiv.operatingCalc()
+                selectDiv.operatingCalc(num1,num2)
             }
 
             5 -> {
