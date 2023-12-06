@@ -1,7 +1,7 @@
 import kotlin.math.roundToInt
 
 class SubstractOperation(override var num1: Double, override var num2: Double) : AbstractOperation() {
-    var resultSub: Double = num1 - num2
+    private var resultSub: Double = num1 - num2
 
     init {
         this.resultSub = resultSub

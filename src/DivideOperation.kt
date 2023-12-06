@@ -2,9 +2,9 @@ import kotlin.math.roundToInt
 
 //추상 클래스 AbstractOperation 상속 , Abstract 내 변수 오버라이딩
 class DivideOperation(override var num1: Double, override var num2: Double) : AbstractOperation() {
-    var resultDiv: Double = num1 / num2
+    private var resultDiv: Double = num1 / num2
 
-    // 가능한 패턴이 하나밖에 없으므르 주 생성자 사용
+    // 가능한 패턴이 하나밖에 없으므로 주 생성자 사용
     init {
         this.resultDiv = resultDiv
     }

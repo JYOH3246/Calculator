@@ -1,7 +1,7 @@
 import kotlin.math.roundToInt
 
 class AddOperation(override var num1: Double, override var num2: Double) : AbstractOperation() {
-    var resultAdd: Double = num1 + num2
+    private var resultAdd: Double = num1 + num2
 
     init {
         this.resultAdd = resultAdd
