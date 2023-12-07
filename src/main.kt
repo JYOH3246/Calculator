@@ -29,9 +29,31 @@ fun main() {
             1 -> {
                 println("덧셈입니다..")
                 println("첫번째 숫자를 입력해 주세요.")
-                var num1: Double = readLine()!!.toDouble()
+                var num1: Double
+                // input 예외처리 : 숫자를 입력하지 않으면 input 창으로
+                while (true) {
+                    try {
+                        num1 = readLine()!!.toDouble()
+                    }
+                    catch (e:java.lang.NumberFormatException) {
+                        println("숫자를 입력해 주시기 바랍니다.")
+                        continue
+                    }
+                    break
+                }
                 println("두번째 숫자를 입력해 주세요.")
-                var num2: Double = readLine()!!.toDouble()
+                var num2: Double
+                // input 예외처리 : 숫자를 입력하지 않으면 input 창으로
+                while (true) {
+                    try {
+                        num2 = readLine()!!.toDouble()
+                    }
+                    catch (e:java.lang.NumberFormatException) {
+                        println("숫자를 입력해 주시기 바랍니다.")
+                        continue
+                    }
+                    break
+                }
                 // AddOperation 클래스를 참조
                 var selectAdd = AddOperation(num1, num2)
                 // 변수를 추상화했기 때문에, 추상화 전과 다르게 변수를 명시
@@ -42,9 +64,31 @@ fun main() {
             2 -> {
                 println("뺄셈입니다..")
                 println("첫번째 숫자를 입력해 주세요.")
-                val num1: Double = readLine()!!.toDouble()
+                var num1: Double
+                // input 예외처리 : 숫자를 입력하지 않으면 input 창으로
+                while (true) {
+                    try {
+                        num1 = readLine()!!.toDouble()
+                    }
+                    catch (e:java.lang.NumberFormatException) {
+                        println("숫자를 입력해 주시기 바랍니다.")
+                        continue
+                    }
+                    break
+                }
                 println("두번째 숫자를 입력해 주세요.")
-                val num2: Double = readLine()!!.toDouble()
+                var num2: Double
+                // input 예외처리 : 숫자를 입력하지 않으면 input 창으로
+                while (true) {
+                    try {
+                        num2 = readLine()!!.toDouble()
+                    }
+                    catch (e:java.lang.NumberFormatException) {
+                        println("숫자를 입력해 주시기 바랍니다.")
+                        continue
+                    }
+                    break
+                }
                 // SubstractOperation 클래스를 참조
                 var selectSub = SubstractOperation(num1, num2)
                 // 변수를 추상화했기 때문에, 추상화 전과 다르게 변수를 명시
@@ -55,9 +99,31 @@ fun main() {
             3 -> {
                 println("곱셈입니다..")
                 println("첫번째 숫자를 입력해 주세요.")
-                var num1: Double = readLine()!!.toDouble()
+                var num1: Double
+                // input 예외처리 : 숫자를 입력하지 않으면 input 창으로
+                while (true) {
+                    try {
+                        num1 = readLine()!!.toDouble()
+                    }
+                    catch (e:java.lang.NumberFormatException) {
+                        println("숫자를 입력해 주시기 바랍니다.")
+                        continue
+                    }
+                    break
+                }
                 println("두번째 숫자를 입력해 주세요.")
-                var num2: Double = readLine()!!.toDouble()
+                var num2: Double
+                // input 예외처리 : 숫자를 입력하지 않으면 input 창으로
+                while (true) {
+                    try {
+                        num2 = readLine()!!.toDouble()
+                    }
+                    catch (e:java.lang.NumberFormatException) {
+                        println("숫자를 입력해 주시기 바랍니다.")
+                        continue
+                    }
+                    break
+                }
                 // MultiplyOperation 클래스를 참조
                 var selectMulti = MultiplyOperation(num1, num2)
                 // 변수를 추상화했기 때문에, 추상화 전과 다르게 변수를 명시
@@ -67,9 +133,31 @@ fun main() {
             4 -> {
                 println("나눗셈입니다..")
                 println("첫번째 숫자를 입력해 주세요.")
-                var num1: Double = readLine()!!.toDouble()
+                var num1: Double
+                // input 예외처리 : 숫자를 입력하지 않으면 input 창으로
+                while (true) {
+                    try {
+                        num1 = readLine()!!.toDouble()
+                    }
+                    catch (e:java.lang.NumberFormatException) {
+                        println("숫자를 입력해 주시기 바랍니다.")
+                        continue
+                    }
+                    break
+                }
                 println("두번째 숫자를 입력해 주세요.")
-                var num2: Double = readLine()!!.toDouble()
+                var num2: Double
+                // input 예외처리 : 숫자를 입력하지 않으면 input 창으로
+                while (true) {
+                    try {
+                        num2 = readLine()!!.toDouble()
+                    }
+                    catch (e:java.lang.NumberFormatException) {
+                        println("숫자를 입력해 주시기 바랍니다.")
+                        continue
+                    }
+                    break
+                }
                 // DivideOperation 클래스를 참조
                 var selectDiv = DivideOperation(num1, num2)
                 // 변수를 추상화했기 때문에, 추상화 전과 다르게 변수를 명시
