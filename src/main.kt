@@ -1,3 +1,8 @@
+import calc.AddOperation
+import calc.DivideOperation
+import calc.MultiplyOperation
+import calc.SubstractOperation
+
 fun main() {
     // 무한루프 : 종료를 선택해야 프로그램이 끝남
     while (true) {
@@ -55,9 +60,8 @@ fun main() {
                     break
                 }
                 // AddOperation 클래스를 참조
-                var selectAdd = AddOperation(num1, num2)
-                // 변수를 추상화했기 때문에, 추상화 전과 다르게 변수를 명시
-                selectAdd.operatingCalculation(num1, num2)
+                val selectAdd = AddOperation()
+                selectAdd.operating(num1, num2)
 
             }
             // selectCalculation에 2가 들어왔을 때
@@ -90,9 +94,9 @@ fun main() {
                     break
                 }
                 // SubstractOperation 클래스를 참조
-                var selectSub = SubstractOperation(num1, num2)
+                val selectSub = SubstractOperation()
                 // 변수를 추상화했기 때문에, 추상화 전과 다르게 변수를 명시
-                selectSub.operatingCalculation(num1, num2)
+                selectSub.operating(num1, num2)
 
             }
             // selectCalculation에 3이 들어왔을 때
@@ -125,9 +129,8 @@ fun main() {
                     break
                 }
                 // MultiplyOperation 클래스를 참조
-                var selectMulti = MultiplyOperation(num1, num2)
-                // 변수를 추상화했기 때문에, 추상화 전과 다르게 변수를 명시
-                selectMulti.operatingCalculation(num1, num2)
+                val selectMulti = MultiplyOperation()
+                selectMulti.operating(num1, num2)
             }
             // selectCalculation에 4가 들어왔을 때
             4 -> {
@@ -159,9 +162,8 @@ fun main() {
                     break
                 }
                 // DivideOperation 클래스를 참조
-                var selectDiv = DivideOperation(num1, num2)
-                // 변수를 추상화했기 때문에, 추상화 전과 다르게 변수를 명시
-                selectDiv.operatingCalculation(num1, num2)
+                val selectDiv = DivideOperation()
+                selectDiv.operating(num1, num2)
             }
             // selectCalculation에 5가 들어왔을 때
             5 -> {

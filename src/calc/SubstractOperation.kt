@@ -1,13 +1,12 @@
+package calc
+
+import abst.AbstractOperation
 import kotlin.math.roundToInt
 
-class SubstractOperation(override var num1: Double, override var num2: Double) : AbstractOperation() {
-    private var resultSub: Double = num1 - num2
+class SubstractOperation() : AbstractOperation() {
 
-    init {
-        this.resultSub = resultSub
-    }
-
-    override fun operatingCalculation(num1: Double, num2: Double) {
+    override fun operating(num1: Double, num2: Double) {
+        val resultSub : Double = (num1-num2)
         // 조건1 : num1과 num2의 input값이 예를 들면 3.0 , 4.0인 경우(num1과 num2가 정수인 경우)
         if (num1 * 10 % 10 == 0.toDouble() && num2 * 10 % 10 == 0.toDouble()) {
             println("${num1.roundToInt()} - ${num2.roundToInt()} = ${resultSub.roundToInt()}")
